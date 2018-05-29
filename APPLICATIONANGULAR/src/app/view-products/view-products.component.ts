@@ -1,3 +1,5 @@
+//Gabriel Ochoa - 28/05/2018
+
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 import { ConfigurationGlobal } from '../configuration.global';
@@ -9,11 +11,13 @@ import { ProductService, Product } from './../../services/product.services';
   styleUrls: ['./view-products.component.css'],
   providers: [ ProductService ]  
 })
+
 export class ViewProductsComponent implements OnInit {
 
   configuration;
   @Output() clicked = new EventEmitter();
 
+  //ng2-easy-table columns configuration. 
   columns = [
     { key: 'imagePath', title: 'Image' },
     { key: 'product', title:'Name' },
@@ -38,6 +42,7 @@ export class ViewProductsComponent implements OnInit {
     this.getData(params);
   }
 
+  //Get all rows
   getData(params: string) {
     this.configuration.isLoading = true;
     this.productService.getProducts(params).subscribe((response: Array<Product>) => {      
@@ -58,6 +63,7 @@ export class ViewProductsComponent implements OnInit {
       this.pagingEvent(obj);
   }
 
+  //Paging event to get data from the server
   private pagingEvent(obj) {
     this.pagination.limit = obj.value.limit ? obj.value.limit : this.pagination.limit;
     this.pagination.offset = obj.value.page ? obj.value.page : this.pagination.offset;
@@ -66,10 +72,12 @@ export class ViewProductsComponent implements OnInit {
     this.getData(params);
   }
 
+  //Send data to details products
   updateProduct(obj) {
     this.clicked.emit( { Product: obj, Action:'edit' } );
   }
 
+  //Delete Product
   deleteProduct(row: number) {
     if(confirm("Are you sure to delete the register?")) {
       this.productService.deleteProduct(row);      
