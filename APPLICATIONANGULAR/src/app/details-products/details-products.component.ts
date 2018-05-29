@@ -1,3 +1,5 @@
+//Gabriel Ochoa - 28/05/2018
+
 import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
 
 import { ProductService, Product } from './../../services/product.services';
@@ -11,10 +13,13 @@ import { ProductService, Product } from './../../services/product.services';
 
 export class DetailsProductsComponent implements OnInit {
 
+  //Get the rows selected in the grid beside the view
   @Input() SelectedRow : any; 
   
+  //Product responsible show the information
   SelectedProduct: Product = {} as Product;
 
+  //Interface management
   isDisabled = true;
   isUpdating = false; 
 
@@ -45,33 +50,39 @@ export class DetailsProductsComponent implements OnInit {
     }
   }
 
+  //New Product
   onNew() {
     this.isDisabled = false;
     this.isUpdating = false;
 
+    //Clear Interface
     this.clearInterface();
   }
 
+  //Cancel New/Update Product
   onCancel() {
     this.clearInterface();    
 
     this.isDisabled = true;
   }
 
+  //Submit Product
   onSubmit(form: any): void {  
 
+    //Correct some data types from the form.
     if (form.row == '')
       form.row = 0;      
     if (form.costPrice == '')
       form.costPrice = 0;
     if (form.originalSell == '')
       form.originalSell = 0;
-
+    
     if (!this.isUpdating) {
       this.onSave(form as Product);
     }
     else{
 
+      //Verify Changes 
       if (form.productCode != '')
         this.SelectedProduct.productCode = form.productCode;
       if (form.performanceRating != '')
@@ -98,6 +109,7 @@ export class DetailsProductsComponent implements OnInit {
   
 }
 
+  //Update the Product. Send data to the .net core
   onUpdate(newProduct: Product) {
     this.productService.updateProduct(newProduct);    
   }
@@ -106,6 +118,7 @@ export class DetailsProductsComponent implements OnInit {
     this.productService.saveNewProduct(newProduct);    
   }
 
+  //Clear the Interface
   clearInterface() {
     this.SelectedProduct = {} as Product;
     
