@@ -1,0 +1,22 @@
+C:\Users\Anthony\Desktop\APPLICATION2\bin\Debug\netcoreapp2.0\APPLICATION2.deps.json
+C:\Users\Anthony\Desktop\APPLICATION2\bin\Debug\netcoreapp2.0\APPLICATION2.runtimeconfig.json
+C:\Users\Anthony\Desktop\APPLICATION2\bin\Debug\netcoreapp2.0\APPLICATION2.runtimeconfig.dev.json
+C:\Users\Anthony\Desktop\APPLICATION2\bin\Debug\netcoreapp2.0\APPLICATION2.dll
+C:\Users\Anthony\Desktop\APPLICATION2\bin\Debug\netcoreapp2.0\APPLICATION2.pdb
+C:\Users\Anthony\Desktop\APPLICATION2\obj\Debug\netcoreapp2.0\APPLICATION2.csprojResolveAssemblyReference.cache
+C:\Users\Anthony\Desktop\APPLICATION2\obj\Debug\netcoreapp2.0\APPLICATION2.csproj.CoreCompileInputs.cache
+C:\Users\Anthony\Desktop\APPLICATION2\obj\Debug\netcoreapp2.0\APPLICATION2.AssemblyInfoInputs.cache
+C:\Users\Anthony\Desktop\APPLICATION2\obj\Debug\netcoreapp2.0\APPLICATION2.AssemblyInfo.cs
+C:\Users\Anthony\Desktop\APPLICATION2\obj\Debug\netcoreapp2.0\APPLICATION2.dll
+C:\Users\Anthony\Desktop\APPLICATION2\obj\Debug\netcoreapp2.0\APPLICATION2.pdb
+C:\Users\Anthony\Desktop\New folder\APPLICATION2\bin\Debug\netcoreapp2.0\APPLICATION2.deps.json
+C:\Users\Anthony\Desktop\New folder\APPLICATION2\bin\Debug\netcoreapp2.0\APPLICATION2.runtimeconfig.json
+C:\Users\Anthony\Desktop\New folder\APPLICATION2\bin\Debug\netcoreapp2.0\APPLICATION2.runtimeconfig.dev.json
+C:\Users\Anthony\Desktop\New folder\APPLICATION2\bin\Debug\netcoreapp2.0\APPLICATION2.dll
+C:\Users\Anthony\Desktop\New folder\APPLICATION2\bin\Debug\netcoreapp2.0\APPLICATION2.pdb
+C:\Users\Anthony\Desktop\New folder\APPLICATION2\obj\Debug\netcoreapp2.0\APPLICATION2.csprojResolveAssemblyReference.cache
+C:\Users\Anthony\Desktop\New folder\APPLICATION2\obj\Debug\netcoreapp2.0\APPLICATION2.csproj.CoreCompileInputs.cache
+C:\Users\Anthony\Desktop\New folder\APPLICATION2\obj\Debug\netcoreapp2.0\APPLICATION2.AssemblyInfoInputs.cache
+C:\Users\Anthony\Desktop\New folder\APPLICATION2\obj\Debug\netcoreapp2.0\APPLICATION2.AssemblyInfo.cs
+C:\Users\Anthony\Desktop\New folder\APPLICATION2\obj\Debug\netcoreapp2.0\APPLICATION2.dll
+C:\Users\Anthony\Desktop\New folder\APPLICATION2\obj\Debug\netcoreapp2.0\APPLICATION2.pdb
