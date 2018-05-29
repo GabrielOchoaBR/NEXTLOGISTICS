@@ -1,0 +1,23 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div id="Page">
+    <div id="Header">
+        <div>Application Sample</div>    
+    </div>
+    <div id="Center">
+        <div id="Page">
+            <div id="East" class="LayoutBorder">
+                <div style="">
+                    <app-view-products (clicked)="onSelectedRow($event)" ></app-view-products>            
+                </div>
+            </div>
+            <div id="Center" class="LayoutBorder">
+                <app-details-products  [SelectedRow]='_SelectedRow'></app-details-products>                            
+            </div>
+        </div>
+    </div>
+    <div id="Footer">
+        <div>
+            Gabriel Ochôa - 28/05/2018
+        </div>
+    </div>
+</div>

@@ -1,0 +1,135 @@
+/* You can add global styles to this file, and also import other style files */
+@import "ngx-easy-table/spectre.css";
+
+body, html {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .LayoutBorder {
+      overflow: hidden;
+      padding:12px;
+  }
+  #Page{
+    display: table;  
+    width:100%;
+    height:100%!important;   
+  }
+  #Header {
+    background-color: #1e486d;
+    outline:1px solid #1f1f1f;
+    display:table-row;
+    height: 60px;
+    width: 100%;    
+  }
+  #Header div {
+    color:#bccfe1;
+    font-size: 25px;
+    padding: 7px 100px;
+    font-style: oblique;
+  }
+  
+  #East {
+    display: table-cell;
+    background-color: white;
+  }
+  #Center {
+    display: table-cell;
+    width: 60%!important;
+    background-color: #f6f6f6;
+  }  
+  #Footer {
+    display:table-row;
+    background-color: #f2f2f2;    
+    outline: 1px solid #d8d8d8;
+    width: 100%;
+    height: 28px;
+  }
+  #Footer div {
+    text-align: right;
+    padding: 5px 20px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #8e8e8e;
+  }
+  /*****************************************/
+th {
+  font-size: 14px;
+  font-weight: bold;
+  color: #0000009e;
+}
+*[_ngcontent-c3] {
+  font-family: inherit!important;
+}
+table__table-row--selected[_ngcontent-c3] {
+  background: #dbdbdb!important;
+}
+
+.font-row{
+  font-size: 12px
+}
+
+.ImageColumn div {
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+    background: #c7e5ff;
+    overflow: hidden;
+    border-radius: 1px;
+}
+
+.ImageColumn div img {
+    height:40px;
+    width:40px;
+}
+.ImageColumn div i {
+  position: relative;
+  top: 8px;
+  left: 8px;
+  color: #bebebe;
+}
+
+.ImageDetails {
+  position: relative;
+  height:150px;
+  line-height: 150px;   
+  float: left;
+  text-align: center;
+  border: 1px solid #e2e2e2;
+  background: aliceblue; 
+  padding: 5px;
+}
+.ImageDetails img {
+  height:125px; 
+  max-width: 125px;
+  vertical-align: middle;
+}
+.ImageDetails i {
+  position: absolute;
+  color: #bebebe;
+  top: 40px;
+  left: 53px;
+  font-size: 70px;
+}
+fieldset {
+  border: 0px;
+}
+
+.rightAlign {
+  text-align: right;
+}
+.space{
+  margin-right: 5px
+}
+.doublespace{
+  margin-right: 20px
+}
+.tdActions div {
+  width: 50px;
+}
+.tdActions a {
+  display: inline;
+  padding: 0 5px 0 0!important;
+}

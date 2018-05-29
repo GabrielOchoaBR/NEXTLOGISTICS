@@ -1,0 +1,35 @@
+<ngx-table [configuration]="configuration"
+           [data]="data"
+           [columns]="columns"
+           [pagination]="pagination"
+           (event)="eventEmitted($event)">
+    <ng-template let-row>
+        <td class="ImageColumn">
+            <div>
+                <img *ngIf="row?.imagePath != null" [src]="row?.imagePath" />
+                <i *ngIf="row?.imagePath == null" class="material-icons">photo_camera</i>
+            </div>
+        </td>
+        <td>
+            <div class="font-row display-block">
+                {{row.product}}
+            </div>
+        </td>
+        <td>
+            <div class="font-row display-block">
+                {{row.productCode}}
+            </div>
+        </td>
+        <td>
+            <div class="font-row display-block">
+                {{row.performanceRating}}
+            </div>
+        </td>
+        <td class="tdActions">
+            <div>
+                <a class="btn-flat" (click)="updateProduct(row)"><i class="material-icons">edit</i></a>
+                <a class="btn-flat" (click)="deleteProduct(row.row)"><i class="material-icons">delete</i></a>
+            </div>
+        </td>
+    </ng-template>
+</ngx-table>
