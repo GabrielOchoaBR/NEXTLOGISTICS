@@ -12,7 +12,8 @@ import { DetailsProductsComponent  } from './details-products/details-products.c
 export class AppComponent {
 
   _SelectedRow = null;
-
+  
+//Get the row selected and send to the detail view
   onSelectedRow(product: any ){
     this._SelectedRow = product;
   }
